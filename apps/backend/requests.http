@@ -1,0 +1,54 @@
+GET http://localhost:4000/ping
+
+###
+GET http://localhost:4000/events
+
+###
+GET http://localhost:4000/events/evento-fullstack
+
+###
+GET http://localhost:4000/events/validate/casamento-alberto-marina/21ff36d7-8fa7-495e-9339-d1687458b660
+
+###
+POST http://localhost:4000/events/access
+Content-Type: application/json
+
+{
+    "id": "21ff36d7-8fa7-495e-9339-d1687458b660",
+    "password": "senha123"
+}
+
+###
+POST http://localhost:4000/events/evento-fullstack/convidado
+Content-Type: application/json
+
+{
+      "name": "Beatriz Lima",
+      "email": "beatriz3@example.com",
+      "confirmed": true,
+      "hasCompanions": true,
+      "numberOfCompanions": 2
+}
+
+###
+POST http://localhost:4000/events
+Content-Type: application/json
+
+{
+  "alias": "evento-fullstack4",
+  "password": "senha123",
+  "name": "Eventos de Desenvolvimento Fullstack",
+  "date": "2024-12-01T07:00",
+  "local": "São Paulo, SP",
+  "description": "Um evento completo para aprender desenvolvimento fullstack do zero.",
+  "image": "https://images.prismic.io/vaultinum/0458a9f1-e149-4037-b9aa-aa4b4fb53c25_propriete-intellectuelle-code-source-protection-compressed.jpg?auto=compress,format&rect=0,0,2400,981&w=2400&h=981",
+  "imageBackground": "https://images.prismic.io/vaultinum/0458a9f1-e149-4037-b9aa-aa4b4fb53c25_propriete-intellectuelle-code-source-protection-compressed.jpg?auto=compress,format&rect=0,0,2400,981&w=2400&h=981",
+  "audience": 200,
+  "guests": [{
+      "name": "Beatriz Lima",
+      "email": "beatriz3@example.com",
+      "confirmed": true,
+      "hasCompanions": true,
+      "numberOfCompanions": 2
+}]
+}

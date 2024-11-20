@@ -1,8 +1,7 @@
-import Event from "@/core/event/model/Event";
+import { Event, Guest } from "core";
 import EventInfo from "./EventInfo";
 import QrCodeForMobile from "./QrCodeForMobile";
 import Statistics from "../shared/Statistics";
-import Guest from "@/core/event/model/Guest";
 import GuestList from "./GuestList";
 
 type DashboardProps = {

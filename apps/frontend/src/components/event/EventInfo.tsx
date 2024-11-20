@@ -1,4 +1,4 @@
-import Event from "@/core/event/model/Event";
+import { Event } from "core";
 import Info from "../shared/info";
 
 type EventInfoProps = {

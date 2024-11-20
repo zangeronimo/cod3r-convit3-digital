@@ -1,4 +1,4 @@
-import Guest from "@/core/event/model/Guest";
+import { Guest } from "core";
 
 type GuestItemProps = {
   guest: Guest;

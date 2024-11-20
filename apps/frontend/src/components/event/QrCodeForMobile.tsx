@@ -1,4 +1,4 @@
-import Event from "@/core/event/model/Event";
+import { Event } from "core";
 import QRCode from "react-qr-code";
 
 type QrCodeForMobileProps = {

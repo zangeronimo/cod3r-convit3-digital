@@ -1,7 +1,7 @@
-import Id from "@/core/shared/Id";
+import Id from "../../shared/Id";
 import Event from "../model/Event";
 import validateEvent from "./validateEvent";
-import Password from "@/core/shared/Password";
+import Password from "../../shared/Password";
 
 export default function complementaryEvent(
   partialEvent: Partial<Event>
