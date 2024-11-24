@@ -42,7 +42,7 @@ export class EventsController {
 
   @Post('access')
   async accessEvent(@Body() data: { id: string; password: string }) {
-    const event = await this.repository.findByKey(data.id);
+    const event = await this.repository.findByKey(data.id, true);
     if (!event || event.password !== data.password) {
       throw new HttpException('Evento ou senha inválida!', 401);
     }

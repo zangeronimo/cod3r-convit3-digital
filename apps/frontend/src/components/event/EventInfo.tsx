@@ -1,5 +1,5 @@
 import { Event } from "core";
-import Info from "../shared/info";
+import Info from "../shared/Info";
 
 type EventInfoProps = {
   event: Event;
